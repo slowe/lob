@@ -1,10 +1,10 @@
-"# Launch date","Name","COSPAR ID","End date","Flyby date","Orbit insertion","Enter atmosphere","Landing date","Sender","Receiver","Score","Successfully reached orbit","Successfully left orbit","# Successful flybys","# Successful orbiters","# Successful atmosphere probes","# Successful landers","# Successful rovers","Link","Report","Reporter","Notes"
+"Launch date","Name","COSPAR ID","End date","Flyby date","Orbit insertion","Enter atmosphere","Landing date","Sender","Receiver","Score","Successfully reached orbit","Successfully left orbit","# Successful flybys","# Successful orbiters","# Successful atmosphere probes","# Successful landers","# Successful rovers","Link","Report","Reporter","Notes"
 "1958-08-17","Able I",,"1958-08-17",,,,,"earth-usaf","moon","0-1",FALSE,,,-1,,,,,"The first attempted launch beyond Earth orbit failed. Reached only 16km altitude.",,
 "1958-09-23","E-1 No.1",,"1958-09-23",,,,,"earth-okb1","moon","0-1",FALSE,,,,,-1,,,"First Russian attempt got a case of the shakes. Vibration disintegrated the rocket.",,
 "1958-10-11","Able II",,"1958-10-11",,,,,"earth-usaf","moon","0-1",FALSE,,,-1,,,,,"The US's second attempt got as far as 113,800km but the second stage cutoff too soon.",,
 "1958-10-11","E-1 No.2",,"1958-10-11",,,,,"earth-okb1","moon","0-1",FALSE,,,,,-1,,,"The second Russian attempt had a similar problem to the first.",,
 "1958-11-08","Pioneer 2",,"1958-11-08",,,,,"earth-nasa","moon","0-1",FALSE,,,-1,,,,,"Actually did worse than the previous attempt only reaching 1550 km.",,
-"1958-12-04","E-1 No.3",,"1958-12-04",,,,,"earth-okb1","moon","0-1",FALSE,,,,,-1,,,"Different problem tot he previous two attempts but still failed to reach orbit.",,
+"1958-12-04","E-1 No.3",,"1958-12-04",,,,,"earth-okb1","moon","0-1",FALSE,,,,,-1,,,"Different problem to the previous two attempts but still failed to reach orbit.",,
 "1958-12-06","Pioneer 3",,"1958-12-06",,,,,"earth-nasa","moon","0-1",FALSE,,-1,,,,,,"NASA may have switched tactics by trying a flyby but they still failed to reach orbit.",,
 "1959-01-02","Mechta",,"1959-01-04","1959-01-04",,,,"earth-okb1","moon","0-1",TRUE,TRUE,,,,-1,,,"Hoping a change of name may change their luck. It got close but a guidance problem meant it missed the Moon by 5995 km.",,
 "1959-03-03","Pioneer 4",,"1959-03-04T22:25",,,,,"earth-nasa","moon","0-1",TRUE,TRUE,-1,,,,,,"Overperformed at the second stage so the flyby was out of instrument range. Became the first US spacecraft to leave Earth orbit.",,
