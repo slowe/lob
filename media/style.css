@@ -36,6 +36,7 @@ h1, h2, h3, p {
 }
 */
 h1, h2 { font-family: Century Gothic, Helvetica, sans-serif; }
+time.update { font-weight: bold; display: block; float: right; }
 table {
 	border-collapse: collapse;
 	font-size: 1em;
