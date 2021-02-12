@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interplanetary Lobbing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:url" property="og:url" content="http://www.strudel.org.uk/lob/">
+	<meta name="twitter:title" property="og:title" content="Interplanetary Lobbing">
+	<meta name="twitter:description" property="og:description" content="Welcome interplanetary sports fans to the Expensive Hardware Lob League. The league covers expensive hardware lob matches held between planets in the Solar System.">
+	<meta name="twitter:image" property="og:image" content="https://www.strudel.org.uk/lob/lob.png">
+	<link rel="stylesheet" href="media/style.css" type="text/css">
+</head>
+<body>
+<div id="player1"></div><div id="player2"></div>
+<div class="content">
+<h1>Interplanetary Lobbing</h1>
+<h2>Last update: 2018-11-26T19:52:59</h2>
+<table class="leaderboard">
+<thead><tr><th class="position" title="Position">Pos</th><th class="team" title="Team">Team</th><th class="played" title="Matches played">P</th><th class="win" title="Matches won">W</th><th class="draw" title="Matches drawn">D</th><th class="loss" title="Matches lost">L</th><th class="goalfor" title="Goals for">F</th><th class="goalagainst" title="Goals Against">A</th><th class="goaldiff" title="Goal difference">GD</th><th class="total" title="Points">PTS</th></tr></thead><tbody>
+<tr><td class="position">1</td><td class="team">Earth</td><td class="played">112</td><td class="win">66</td><td class="draw">6</td><td class="loss">40</td><td class="goalfor">85</td><td class="goalagainst">45</td><td class="goaldiff">+40</td><td class="score">+26</td></tr>
+<tr><td class="position">2</td><td class="team"><a href="#mars">Mars</a></td><td class="played">49</td><td class="win">22</td><td class="draw">5</td><td class="loss">22</td><td class="goalfor">26</td><td class="goalagainst">27</td><td class="goaldiff">&minus;1</td><td class="score">0</td></tr>
+<tr><td class="position">=3</td><td class="team"><a href="#ceres">Ceres</a></td><td class="played">1</td><td class="win">0</td><td class="draw">0</td><td class="loss">1</td><td class="goalfor">0</td><td class="goalagainst">1</td><td class="goaldiff">&minus;1</td><td class="score">&minus;1</td></tr>
+<tr><td class="position">=3</td><td class="team"><a href="#pluto">Pluto</a></td><td class="played">1</td><td class="win">0</td><td class="draw">0</td><td class="loss">1</td><td class="goalfor">0</td><td class="goalagainst">1</td><td class="goaldiff">&minus;1</td><td class="score">&minus;1</td></tr>
+<tr><td class="position">=3</td><td class="team"><a href="#uranus">Uranus</a></td><td class="played">1</td><td class="win">0</td><td class="draw">0</td><td class="loss">1</td><td class="goalfor">0</td><td class="goalagainst">1</td><td class="goaldiff">&minus;1</td><td class="score">&minus;1</td></tr>
+<tr><td class="position">=3</td><td class="team"><a href="#neptune">Neptune</a></td><td class="played">1</td><td class="win">0</td><td class="draw">0</td><td class="loss">1</td><td class="goalfor">0</td><td class="goalagainst">1</td><td class="goaldiff">&minus;1</td><td class="score">&minus;1</td></tr>
+<tr><td class="position">7</td><td class="team"><a href="#mercury">Mercury</a></td><td class="played">2</td><td class="win">0</td><td class="draw">0</td><td class="loss">2</td><td class="goalfor">0</td><td class="goalagainst">2</td><td class="goaldiff">&minus;2</td><td class="score">&minus;2</td></tr>
+<tr><td class="position">8</td><td class="team"><a href="#saturn">Saturn</a></td><td class="played">4</td><td class="win">0</td><td class="draw">0</td><td class="loss">4</td><td class="goalfor">0</td><td class="goalagainst">4</td><td class="goaldiff">&minus;4</td><td class="score">&minus;4</td></tr>
+<tr><td class="position">9</td><td class="team"><a href="#venus">Venus</a></td><td class="played">44</td><td class="win">18</td><td class="draw">1</td><td class="loss">25</td><td class="goalfor">19</td><td class="goalagainst">38</td><td class="goaldiff">&minus;19</td><td class="score">&minus;7</td></tr>
+<tr><td class="position">10</td><td class="team"><a href="#jupiter">Jupiter</a></td><td class="played">9</td><td class="win">0</td><td class="draw">0</td><td class="loss">9</td><td class="goalfor">0</td><td class="goalagainst">10</td><td class="goaldiff">&minus;10</td><td class="score">&minus;9</td></tr>
+</tbody></table><p>Welcome to the <a href="http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html">Expensive Hardware Lob League</a>. The league covers expensive hardware lob matches held between planets in the Solar System. Two dwarf planets have recently been admitted to the league and lost their first matches against league champions Team Earth.</p><p>After a string of recent successes, <strong>Team Earth</strong> is currently at the top of the leaderboard. Team Earth continues to grow with <strong>6</strong> different space agencies now in the game. There are currently 3 matches in play.</p><h3>Rules</h3><p>For each orbiter/lander that successfully returns data the Lobber scores a goal. For each orbiter/lander thwarted (secret agent LGMs, IPBMs, "lasers", blowing sand in the lens, etc...), the Lobbee gains a goal. At the end of the match 1 point is awarded to the winner, 0 points for a draw and &minus;1 points to the loser. This points system attempts to account for some teams (ahem, Earth) playing far more matches than others.</p><h3>Credits</h3><p>This is heavily derived from <a href="http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html">an original idea by David Gore</a>. Brought up-to-date by <a href="http://twitter.com/astronomyblog">@astronomyblog</a>.</p><br style="clear:both;" /><div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">2 - 0</span><span class="result mercury" title="mercury">MER</span></div></div><h2 id="mercury">Earth v Mercury Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="1973-085A">1:0</span></td>
+		<td class="mission"><a href="http://cps.earth.northwestern.edu/M10/bulletins.html" class="mission">Mariner 10</a><br />Kick off: <time datetime="1973-11-03T05:45:00">Sat Nov 03 1973 05:45</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mercury</div></div><div class="score">1 - 0</div></td>
+		<td class="report"></td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2004-030A">2:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2004-030A" class="mission">MESSENGER</a><br />Kick off: <time datetime="2004-08-03T06:15:56">Tue Aug 03 2004 06:15</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mercury</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"The second mission to Mercury in 31 years was successfully launched and inserted into solar orbit 57 minutes later. Earth flyby occurred on 2005 August 2 at 20:13 at a closest approach of 2347 km.<br /><br />As planned, on 2008 Jan 14, ""MESSENGER passed 200 kilometers above Mercury's surface. Extensive scientific observations were executed during this flyby encounter, including imaging a large portion of Mercury's surface that has never before been seen by a spacecraft."" Read more and see the data on the <a href=""http://messenger.jhuapl.edu/"">MESSENGER Website</a>." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr class="inplay">
+		<td class="total"></td>
+		<td class="mission"><a href="http://sci.esa.int/bepicolombo/" class="mission">BepiColumbo</a><br />Kick off: <time datetime="2018-10-01T00:00:00">Mon Oct 01 2018 00:00</time></td>
+		<td class="agency"><img src="media/logo_esa.png" class="player" alt="esa" title="ESA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mercury</div></div><div class="score">IN PLAY</div></td>
+		<td class="report">"The mission as currently envisioned involves two components: the Mercury Planetary Orbiter (MPO) and the Mercury Magnetospheric Orbiter (MMO). The two components will be launched together in October 2018. The spacecraft will have a 6 year interplanetary cruise to Mercury using solar-electric propulsion and Moon, Venus, and Mercury gravity assists. The result of this match should be known by 2022 unless it runs into extra-time." (<strong>Reporters:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a> & Stuart Lowe")</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">25 - 18</span><span class="result venus" title="venus">VEN</span></div></div><h2 id="venus">Earth v Venus Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="1961-002A">0:1</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1961-002A" class="mission">Sputnik 7</a><br />Kick off: <time datetime="1961-02-04T09:36:00">Sat Feb 04 1961 09:36</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The spacecraft and attached upper stage either broke up as they were going into Earth orbit or had the upper stage explode in orbit during the burn to put the spacecraft into Mars trajectory. In either case, the spacecraft broke into many pieces, some of which apparently remained in Earth orbit for a few days. (This occurred during the Cuban missile crisis. The debris was detected by the U.S. Ballistic Missile Early Warning System radar in Alaska and was momentarily feared to be the start of a Soviet nuclear ICBM attack.)" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1961-003A">0:2</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1961-003A" class="mission">Venera 1</a><br />Kick off: <time datetime="1961-02-12T02:09:00">Sun Feb 12 1961 02:09</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"A swing and a miss: On February 19, seven days after launch and at a distance of about 2,000,000 km from Earth, contact with the spacecraft was lost. On May 19, Venera 1 passed within 100,000 km of Venus and entered a heliocentric orbit." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="MARIN1">0:3</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=MARIN1" class="mission">Mariner 1</a><br />Kick off: <time datetime="1962-07-22T09:21:23">Sun Jul 22 1962 09:21</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The vehicle was destroyed by the Range Safety Officer 293 seconds after launch at 09:26:16 UT when it veered off course. Apparently, someone neglected a hyphen in the data-editing program on the flight computer." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1962-040A">0:4</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1962-040A" class="mission">Sputnik 19</a><br />Kick off: <time datetime="1962-08-25T02:52:00">Sat Aug 25 1962 02:52</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The launcher put the spacecraft into Earth orbit, but the escape stage failed and the probe remained in geocentric orbit for three days until the orbit decayed on August 28 and it re-entered Earth's atmosphere." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1962-041A">1:4</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1962-041A" class="mission">Mariner 2</a><br />Kick off: <time datetime="1962-08-27T06:53:14">Mon Aug 27 1962 06:53</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"SCORE! But it wasn't easy: On September 8 17:50 UT the spacecraft suddenly lost its attitude control, which was restored by the gyroscopes 3 minutes later. The cause was unknown but may have been a collision with a small object. Then, on November 15, one solar panel failed. However, the probe got within 34,773 km of the planet on December 14 19:59:28. Much of the baseline information that we know about Venus came from this probe: a slow retrograde rotation rate for Venus, hot surface temperatures and high surface pressures, a predominantly carbon dioxide atmosphere, continuous cloud cover with a top altitude of about 60 km, and no detectable magnetic field. The last transmission from Mariner 2 was received on 1963 January 3 at 07:00 UT. Mariner 2 remains in heliocentric orbit." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1962-043A">1:5</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1962-043A" class="mission">Sputnik 20</a><br />Kick off: <time datetime="1962-09-01T02:12:30">Sat Sep 01 1962 02:12</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The launcher put the spacecraft into Earth orbit, but the escape stage failed and the probe remained in geocentric orbit for five days until the orbit decayed and it re-entered Earth's atmosphere. Sound familliar?" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1962-045A">1:6</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1962-045A" class="mission">Sputnik 21</a><br />Kick off: <time datetime="1962-09-12T00:59:13">Wed Sep 12 1962 00:59</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The launcher put the spacecraft into Earth orbit, but the escape stage failed. This time, the probe did not remain in orbit. That's because the escape stage EXPLODED." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1963-044A">1:7</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1963-044A" class="mission">Cosmos 21</a><br />Kick off: <time datetime="1963-11-11T06:23:35">Mon Nov 11 1963 06:23</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The launcher put the spacecraft into Earth orbit, but the escape stage failed and the probe remained in geocentric orbit for three days until the orbit decayed and it re-entered Earth's atmosphere. Someone needs to sit down and have a talk with this player...." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total">1:8</td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/planetary/tent_launch.html#venera1964a" class="mission">Venera 1964A</a><br />Kick off: <time datetime="1964-02-19T05:47:40">Wed Feb 19 1964 05:47</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">The spacecraft and launcher failed to attain Earth orbit (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total">1:9</td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/planetary/tent_launch.html#venera1964b" class="mission">Venera 1964B</a><br />Kick off: <time datetime="1964-03-01T00:00:00">Sun Mar 01 1964 00:00</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The spacecraft and launcher failed to attain Earth orbit<br /><br />Ok, someone <i>else</i> needs to have a talk with this player..." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1964-014A">1:10</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1964-014A" class="mission">Cosmos 27</a><br />Kick off: <time datetime="1964-03-27T03:21:00">Fri Mar 27 1964 03:21</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The launcher put the spacecraft into Earth orbit, but the escape stage failed and the probe remained in geocentric orbit until the orbit decayed and it re-entered Earth's atmosphere. Venus seems to be doing very well with this standard defense." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1964-016D">1:11</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1964-016D" class="mission">Zond 1</a><br />Kick off: <time datetime="1964-04-02T02:52:00">Thu Apr 02 1964 02:52</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Once again, Venus sucessfully jams a probe from Earth. The probe flew by Venus at a distance of 100,000 km on 1964 July 14, but communications were lost on 1964 May 14. It now happily orbits the sun." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1965-091A">1:12</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1965-091A" class="mission">Venera 2</a><br />Kick off: <time datetime="1965-11-12T05:02:00">Fri Nov 12 1965 05:02</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Once again, Venus sucessfully jams a probe from Earth. The probe flew by Venus at a distance of 24,000 km on 1966 February 27, but the spacecraft system had ceased to operate before the planet was reached and returned no data. It now happily orbits the sun.<br /><br />Raspberry, anyone?" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1965-092A">1:13</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1965-092A" class="mission">Venera 3</a><br />Kick off: <time datetime="1965-11-16T04:19:00">Tue Nov 16 1965 04:19</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"As if foreshadowing a ""landing"" on <a href=""#mars"">Mars</a> almost exactly five years in the future, and following the lead of Venera 1, Venera 3 ""landed"" on Venus on 1966 March 1 making it the first probe to ""land"" on the surface of another planet. It carried a radio communication system, scientific instruments, electrical power sources, and medallions bearing the coat of arms of the U.S.S.R. None of these things do you much good when you ""land"" on another planet." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1965-094A">1:14</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1965-094A" class="mission">Cosmos 96</a><br />Kick off: <time datetime="1965-11-23T03:22:00">Tue Nov 23 1965 03:22</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Let's just say that this one made it to Earth orbit, but a tiny malfunction (read: explosion) damaged the spacecraft (go figure) and kept it from leaving orbit. The damaged spacecraft remained in orbit for 16 days and reentered the Earth's atmosphere on 9 December 1965." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total">1:15</td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/planetary/tent_launch.html#venera1965a" class="mission">Venera 1965A</a><br />Kick off: <time datetime="1965-11-26T00:00:00">Fri Nov 26 1965 00:00</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"It is believed the SL-6/A-2-e launcher failed.<br /><br />This brings back memories of those movies of rockets that start lifting off only to sink back to Earth - with the engines still firing.<br /><br />Popcorn, anyone?" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1967-058A">1:15</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1967-058A" class="mission">Venera 4</a><br />Kick off: <time datetime="1967-06-12T02:40:00">Mon Jun 12 1967 02:40</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 1</div></td>
+		<td class="report">"After 19 months of therapy, Earth's coach gave Russia the go-ahead to get back into the game. And this player's next attempt did well: On 1967 October 18, the spacecraft entered the Venusian atmosphere carrying a number of scientific instruments. ""Signals were returned by the spacecraft, which braked and then deployed a parachute system after entering the Venusian atmosphere, until it reached an altitude of 24.96 km.""<br /><br />Which kinda makes you wonder what happened after that, doesn't it?"</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1967-060A">2:15</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1967-060A" class="mission">Mariner 5</a><br />Kick off: <time datetime="1967-06-14T06:01:00">Wed Jun 14 1967 06:01</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Preventing the shut-out by carefully watching his team-mate's tactics over the last five years, player USA successfully overcomes Venus' defenses and flies past the planet at a distance of 4,000 km on 1967 October 19. ""The spacecraft instruments measured both interplanetary and Venusian magnetic fields, charged particles, and plasmas, as well as the radio refractivity and UV emissions of the Venusian atmosphere.""" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1967-063A">2:16</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1967-063A" class="mission">Cosmos 167</a><br />Kick off: <time datetime="1967-06-17T02:36:38">Sat Jun 17 1967 02:36</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Trying to follow on closely with another play, Russia suffers a relapse when the spacecraft fails to leave Earth orbit and re-enters the atmosphere eight days later." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1969-001A">3:16</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1969-001A" class="mission">Venera 5</a><br />Kick off: <time datetime="1969-01-05T06:28:00">Sun Jan 05 1969 06:28</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"In a bout of mania, on 1969 May 16, while the capsule was suspended from the parachute, 53 minutes of data from the Venusian atmosphere were returned. Its real mission, if anyone has been paying attention to this player, was to deposit a medallion bearing the coat of arms of the U.S.S.R. and a bas-relief of V.I. Lenin to the night side of Venus." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1969-002A">4:16</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1969-002A" class="mission">Venera 6</a><br />Kick off: <time datetime="1969-01-10T05:52:00">Fri Jan 10 1969 05:52</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Just to prove it wasn't a fluke, Russia gets another one in off the hoop. It only transmitted 51 minutes of data back home on 1969 May 17, but that's ok. They got another medallion bearing the coat of arms of the U.S.S.R. and a bas-relief of V.I. Lenin to the night side of Venus - which is what counts." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1970-060A">5:16</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1970-060A" class="mission">Venera 7</a><br />Kick off: <time datetime="1970-08-17T05:38:00">Mon Aug 17 1970 05:38</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Venera 7 entered the atmosphere of Venus on December 15, 1970, and a landing capsule was jettisoned. While the lander was descending by parachute, the capsule antenna was extended, and signals were returned for 35 min. Another 23 min of very weak signals were received after the spacecraft landed on Venus. This makes Venera 7 the first probe to return data after landing on another planet." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1970-065A">5:17</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1970-065A" class="mission">Cosmos 359</a><br />Kick off: <time datetime="1970-08-22T05:06:09">Sat Aug 22 1970 05:06</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"You know the story: The probe gets to orbit, the escape stage fails, a bas-relief of Lenin is now left orbiting the Earth." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1972-021A">6:17</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1972-021A" class="mission">Venera 8</a><br />Kick off: <time datetime="1972-03-27T04:15:01">Mon Mar 27 1972 04:15</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">The spacecraft entered the atmosphere of Venus on 22 July 1972 at 08:37 UT. Venera 8 transmitted data during the descent and landed at 09:32 UT. It transmitted data for 50 minutes.</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1972-023A">6:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1972-023A" class="mission">Cosmos 482</a><br />Kick off: <time datetime="1972-03-31T04:02:33">Fri Mar 31 1972 04:02</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"All together now: The launcher put the spacecraft into Earth orbit, but the escape stage failed and the spacecraft broke into four pieces, two of which are still in orbit.<br /><br />We're not sure about the bas-relief of Lenin."</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1973-085A">7:18</span></td>
+		<td class="mission"><a href="http://cps.earth.northwestern.edu/M10/bulletins.html" class="mission">Mariner 10</a><br />Kick off: <time datetime="1973-11-03T05:45:00">Sat Nov 03 1973 05:45</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Starting a-so-far-unbroken winning streak for Earth, in what turns out to be, also, the <strong>first</strong> <a href=""#mercury"">double play</a>, Mariner 10 sent back the </B>first</B> high-resolution pictures of Venus on February 5, 1974 at 17:01 at a closest range of 5,768 km before using Venus for the <strong>first</strong> gravitationally assisted transfer orbit to <a href=""#mercury"">Mercury</a>." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1975-050D">8:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1975-050D" class="mission">Venera 9</a><br />Kick off: <time datetime="1975-06-08T02:38:00">Sun Jun 08 1975 02:38</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"This orbiter/lander pair arrived at Venus on 1975 October 20. The orbiter acted as a communications relay for the lander which landed on October 22 at 05:13 near local noon. A system of circulating fluid was used to distribute the heat load. This system, plus precooling prior to entry, permitted operation of the spacecraft for 53 min after landing.<br /><br />Although not specifically mentioned in the report, I believe this was the first craft to relay <a href=""http://nssdc.gsfc.nasa.gov/imgcat/html/mission_page/VN_Venera_9_Lander_page1.html""> images from the Venusian surface</a>." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1975-054D">9:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1975-054D" class="mission">Venera 10</a><br />Kick off: <time datetime="1975-06-14T03:00:31">Sat Jun 14 1975 03:00</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"This orbiter/lander pair arrived at Venus on 1975 October 23. The lander touched down on Venus on October 25 at 05:17 near local noon. It sent back data for an amazing 65 minutes before it succumbed to the intense heat and pressure. The lander was similar to Venera 9 and the landing site was about 2,200 km from the Venera 9 landing site." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1978-051A">10:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1978-051A" class="mission">Pioneer Venus Orbiter</a><br />Kick off: <time datetime="1978-05-20T13:13:00">Sat May 20 1978 13:13</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">This orbiter arrived at Venus on 1978 December 4. It performed a number of measurements until 1980 July when it went into a state of hibernation. It was re-animated in 1991 to let the radar mapper investigate previously inaccessible southern portions of the planet.<br /><br />In 1992 August the orbiter's fuel ran out and it was destroyed upon entering the Venusian atmosphere. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1978-078A">11:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1978-078A" class="mission">Pioneer Venus Multiprobe</a><br />Kick off: <time datetime="1978-08-08T07:33:00">Tue Aug 08 1978 07:33</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">5 - 0</div></td>
+		<td class="report">"This five-piece bus/multiprobe arrived at Venus and, on 1978 November 16, the four probes (named ""Large,"" ""North,"" ""Day,"" and ""Night"") all entered the atmosphere at about 18:50 and impacted the planet's surface at about 19:45. The Day probe continued transmitting for an additional 68 minutes after impact before loss of signal.<br /><br />The bus was targeted to enter the Venusian atmosphere at a shallow angle and transmit data to Earth; but with no heat shield or parachute, the bus survived and made measurements only to about 110 km altitude before burning up." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1978-084A">12:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1978-084A" class="mission">Venera 11</a><br />Kick off: <time datetime="1978-09-09T03:25:39">Sat Sep 09 1978 03:25</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"This flight platform/lander pair arrived at Venus on 1978 December 25. The lander separated from the platform and decended into the atmosphere as the platform continued past Venus in a heliocentric orbit. The platform acted as a data relay for the lander for 95 minutes.<br /><br />The lander made a soft landing (if you can call 7.5 m/s ""soft"") at 06:24 Moscow time and transmitted data on the atmosphere, soil conditions and other phenomenon (lighting and thunder!) until the platform went out of range." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1978-086A">13:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1978-086A" class="mission">Venera 12</a><br />Kick off: <time datetime="1978-09-14T02:25:13">Thu Sep 14 1978 02:25</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"Identical to its sister craft, Venera 11, Venera 12 flew past Venus on 1978 December 21 at the target range of 34,000 km and continued past the planet in a heliocentric orbit, just like its sister craft would four days later. It relayed data from the lander for 110 minutes until it flew out of range." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1981-106D">14:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1981-106D" class="mission">Venera 13</a><br />Kick off: <time datetime="1981-10-30T06:04:00">Fri Oct 30 1981 06:04</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"Arriving on 1982 March 1, the lander plunged into the Venusian atmosphere and relayed its data to the platform which, like the previous missions, flew past Venus into a heliocentric orbit. The lander survived an amazing 127 minutes at 457C and 84 atmospheres.<br /><br />This is the lander which sent home the <a href=""http://nssdc.gsfc.nasa.gov/imgcat/html/object_page/v13_vg261_262.html""> image</a> most people remember." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1981-110D">15:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1981-110D" class="mission">Venera 14</a><br />Kick off: <time datetime="1981-11-04T05:31:00">Wed Nov 04 1981 05:31</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"Four days after Venera 13, Venera 14 dropped off its lander as it flew past the planet in a heliocentric orbit. The lander survived for 57 minutes at 465C and 94 atmospheres approximately 950 km southwest of Venera 13." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1983-053A">16:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1983-053A" class="mission">Venera 15</a><br />Kick off: <time datetime="1983-06-02T02:38:39">Thu Jun 02 1983 02:38</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"This orbiter, in conjunction with Venera 16, mapped the planet from the north pole to 30 degrees north latitude over its eight month operating life." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1983-054A">17:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1983-054A" class="mission">Venera 16</a><br />Kick off: <time datetime="1983-06-07T00:00:00">Tue Jun 07 1983 00:00</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"This orbiter, in conjunction with Venera 15, mapped the planet from the north pole to 30 degrees north latitude over its eight month operating life." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1981-106D">18:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1981-106D" class="mission">Vega 1</a><br />Kick off: <time datetime="1984-12-15T09:16:24">Sat Dec 15 1984 09:16</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">The descent module landed on 1985 June 11 but only the mass spectrometer was able to return data. The flyby probe continued on to flyby Comet Halley (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1984-128A">19:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1984-128A" class="mission">Vega 2</a><br />Kick off: <time datetime="1984-12-21T09:13:52">Fri Dec 21 1984 09:13</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"A twin of Vega 1, this mission arrived on 1985 June 15 and transmitted data from the surface for 56 minutes. The flyby mission continued on to Comet Halley" (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1989-033B">20:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1989-033B" class="mission">Magellan</a><br />Kick off: <time datetime="1989-05-04T18:46:59">Thu May 04 1989 18:46</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">The Venus Radar Mapper project</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1989-084B">21:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1989-084B" class="mission">Galileo</a><br />Kick off: <time datetime="1989-10-18T22:23:00">Wed Oct 18 1989 22:23</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">Venus flyby/Jupiter orbiter</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1997-061A">22:18</span></td>
+		<td class="mission"><a href="http://saturn.jpl.nasa.gov/" class="mission">Cassini</a><br />Kick off: <time datetime="1997-10-15T08:43:00">Wed Oct 15 1997 08:43</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Cassini was the largest interplanetary spacecraft ever constructed by NASA. It had two fly-bys of Venus on April 26, 1998, and June 24, 1999. Science instruments on the spacecraft searched for lightning in Venus' atmosphere during the flyby, and the radar instrument onboard was activated to test a bounced signal off Venus' surface." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2004-030A">23:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2004-030A" class="mission">MESSENGER</a><br />Kick off: <time datetime="2004-08-03T06:15:56">Tue Aug 03 2004 06:15</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Successfully launched and injected into solar orbit 57 minutes later. It peformed its Earth flyby on 2005 August 2 and will perform two Venus flybys on 2006 October 24 and 2007 June 6 before it moves on to <a href=""#mercury"">Mercury</a>.<br /><br />2006-10-24: MESSENGER came within 2,990 km of Venus and snapped pictures of the planet from a distance of about 16.5 million km." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2005-045A">24:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2005-045A" class="mission">Venus Express</a><br />Kick off: <time datetime="2005-11-09T03:33:00">Wed Nov 09 2005 03:33</time></td>
+		<td class="agency"><img src="media/logo_esa.png" class="player" alt="esa" title="ESA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"The twin sister of Mars Express, this mission is set to study the atmosphere and plasma environment of Venus. After being postponed a week due to contamination of the launch fairing, Venus Express left from the Baikonur Cosmodrome in Kazakhstan. Venus orbit insertion should occur on 2006 April 6 where it will be placed into a 250 x 66,000 km polar orbit. The mission is scheduled to last only two Venusian siderial days." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2010-020D">25:18</span></td>
+		<td class="mission"><a href="http://www.nasa.gov/mission_pages/dawn/main/index.html" class="mission">Akatsuki (Planet-C)</a><br />Kick off: <time datetime="2010-05-20T21:58:22">Thu May 20 2010 21:58</time></td>
+		<td class="agency"><img src="media/logo_jaxa.png" class="player" alt="jaxa" title="JAXA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"In JAXA's second planetary league match (their first interplanetary match was against non-league competitor Comet Halley in 1985), Akatsuki began its orbital insertion rocket firing at 23:49 UTC, 06 December 2010. Ignition was confirmed before Akatsuki passed behind Venus for 22 minutes, but communications were not regained on schedule at 00:12 UT. Signals were finally received at 01:28 UT. It was determined that a faulty valve in the fuel pressure system malfunctioned and the engine firing scheduled for 9 minutes, 20 seconds only lasted about 152 seconds, so the spacecraft did not enter Venus orbit but instead flew by the planet. Akatsuki wasn't out of the game and made a valiant second attempt at orbit on December 6/7 2015. This attempt was successful and put Akatsuki in a 400 x 440,000km orbit around Venus. <a href=""http://global.jaxa.jp/press/2015/12/20151209_akatsuki.html"">Images were returned</a> by the 1&micro;m camera (IR1), the Longwave IR camera (LIR), and the Ultraviolet Imager (UVI). A late score in extra-time for Team Earth!" (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr class="inplay">
+		<td class="total"></td>
+		<td class="mission"><a href="http://sci.esa.int/bepicolombo/" class="mission">BepiColumbo</a><br />Kick off: <time datetime="2018-10-01T00:00:00">Mon Oct 01 2018 00:00</time></td>
+		<td class="agency"><img src="media/logo_esa.png" class="player" alt="esa" title="ESA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Venus</div></div><div class="score">IN PLAY</div></td>
+		<td class="report">"The mission as currently envisioned involves two components: the Mercury Planetary Orbiter (MPO) and the Mercury Magnetospheric Orbiter (MMO). The two components will be launched together in October 2018. The spacecraft will have a 6 year interplanetary cruise to Mercury using solar-electric propulsion and Moon, Venus, and Mercury gravity assists." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">22 - 22</span><span class="result mars" title="mars">MAR</span></div></div><h2 id="mars">Earth v Mars Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total">0:0</td>
+		<td class="mission"><a href="http://www.waroftheworlds.org/" class="mission">Martian Invasion Fleet</a><br />Kick off: <time datetime="1938-10-31T00:45:00">Mon Oct 31 1938 00:45</time></td>
+		<td class="agency"><img src="media/logo_mars.png" class="player" alt="" title="" /></td>
+		<td class="between"><div class="players"><div class="player player1">Mars</div><div class="v">v</div><div class="player player2">Earth</div></div><div class="score">0 - 0</div></td>
+		<td class="report">"Various scattered reports detail an invasion force of hundreds at Grovers Mill, NJ from Mars on 1938 October 31 around 01:50:00 UTC. Unfortunately, these reports are unsubstantiated; but even if true, the landers don't appear to have left with any information.<br /><br />Scientists at Yoyodyne Propulsion Systems were unavaliable for comment." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="MARSNK1">0:1</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=MARSNK1" class="mission">Marsnik 1</a><br />Kick off: <time datetime="1960-10-10T14:27:49">Mon Oct 10 1960 14:27</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report"></td>
+	</tr>
+	<tr>
+		<td class="total"><span id="MARSNK2">0:2</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=MARSNK2" class="mission">Marsnik 2</a><br />Kick off: <time datetime="1960-10-14T13:51:03">Fri Oct 14 1960 13:51</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">Yet another incomplete in exactly the same fashion. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1962-057A">0:3</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1962-057A" class="mission">Sputnik 22</a><br />Kick off: <time datetime="1962-10-24T17:55:04">Wed Oct 24 1962 17:55</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The spacecraft and attached upper stage either broke up as they were going into Earth orbit or had the upper stage explode in orbit during the burn to put the spacecraft into Mars trajectory. In either case, the spacecraft broke into many pieces, some of which apparently remained in Earth orbit for a few days. (This occurred during the Cuban missile crisis. The debris was detected by the U.S. Ballistic Missile Early Warning System radar in Alaska and was momentarily feared to be the start of a Soviet nuclear ICBM attack.)" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1962-061A">0:4</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1962-061A" class="mission">Mars 1</a><br />Kick off: <time datetime="1962-11-01T16:14:16">Thu Nov 01 1962 16:14</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Early telemetry indicated that there was a leak in one of the gas valves in the orientation system so the spacecraft was transferred to gyroscopic stabilization. On its way to Mars, communications ceased, probably due to failure of the spacecraft orientation system." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1962-062A">0:5</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1962-062A" class="mission">Sputnik 24</a><br />Kick off: <time datetime="1962-11-04T15:35:15">Sun Nov 04 1962 15:35</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">The booster and spacecraft broke up during the burn to transfer to Mars trajectory. Five large pieces were tracked by the U.S. Ballistic Missile Early Warning System. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1964-073A">0:6</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1964-073A" class="mission">Mariner 3</a><br />Kick off: <time datetime="1964-11-05T19:22:05">Thu Nov 05 1964 19:22</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Earth puts in a new player, but a protective shield failed to eject after the spacecraft had passed through the Earth's atmosphere. None of the instrument sensors were uncovered, and the added weight prevented the spacecraft from attaining its prescribed Mars trajectory." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1964-078C">0:7</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1964-078C" class="mission">Zond 2</a><br />Kick off: <time datetime="1964-11-30T00:00:00">Mon Nov 30 1964 00:00</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"One of the two solar panels failed so only half the anticipated power was available to the spacecraft. After a mid-course maneuver, communications with the spacecraft were lost in early May, 1965. The spacecraft flew by Mars on 6 August 1965 at a distance of 1500 km." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1964-077A">1:7</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1964-077A" class="mission">Mariner 4</a><br />Kick off: <time datetime="1964-11-28T14:22:01">Sat Nov 28 1964 14:22</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">EARTH SCORES!!!! Mariner 4 successfully flies by Mars on 1965 Jul 14 and returns the first pictures of the Martian Surface. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total">1:8</td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=" class="mission">Unnamed</a><br />Kick off: <time datetime="1967-03-27T00:00:00">Mon Mar 27 1967 00:00</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">Launch Failure (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1969-014A">2:8</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1969-014A" class="mission">Mariner 6</a><br />Kick off: <time datetime="1969-02-25T01:29:02">Tue Feb 25 1969 01:29</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">Earth scores another goal on 1969 Jul 31 with this flyby mission. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="MARS69A">2:9</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=MARS69A" class="mission">Mars 1969A</a><br />Kick off: <time datetime="1969-03-27T10:40:45">Thu Mar 27 1969 10:40</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"This Soviet Mars mission was never officially announced but has since been identified as a planned orbiter. After successful operation of the first two stages, the third stage launcher experienced a malfunction in a rotor bearing which caused the turbopump to catch fire. The engine shut down and exploded (good thing it shut down, eh?); the remains of the craft landing in the Altai mountains." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1969-030A">3:9</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1969-030A" class="mission">Mariner 7</a><br />Kick off: <time datetime="1969-03-27T22:22:01">Thu Mar 27 1969 22:22</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"In an amazing play to keep the game from being a shut-out, Mariner 7 flies by Mars on 1969 Aug 05." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="MARS69B">3:10</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=MARS69B" class="mission">Mars 1969B</a><br />Kick off: <time datetime="1969-04-02T10:33:00">Wed Apr 02 1969 10:33</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"This Soviet Mars mission was never officially announced but has since been identified as a planned orbiter. The first stage of the launcher failed almost immediately. At 0.02 seconds after liftoff, one of the six first-stage rockets exploded. The control system initially compensated for the lost engine and the launch proceeded on 5 engines - until 25 seconds after liftoff, at approximately 1 km altitude, the rocket began to tip over to a horizontal position. The five engines shut down and the rocket impacted (ouch) and exploded (very important) 41 seconds after liftoff and approximately 3 km from the launch pad." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="MARINH">3:11</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=MARINH" class="mission">Mariner 8</a><br />Kick off: <time datetime="1971-05-08T01:11:00">Sat May 08 1971 01:11</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Just when you thought things were under control, after the main Centaur engine was ignited at T+265 seconds, the upper stage began to oscillate in pitch and tumbled out of control. The Centaur stage shut down 365 seconds after launch due to starvation caused by the tumbling. The Centaur and spacecraft payload separated and re-entered the Earth's atmosphere approximately 1500 km downrange and fell into the Atlantic Ocean about 560 km north of Puerto Rico." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1971-042A">3:12</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1971-042A" class="mission">Cosmos 419</a><br />Kick off: <time datetime="1971-05-10T16:58:42">Mon May 10 1971 16:58</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"The booster successfully put the spacecraft into low Earth parking orbit, but the stage 4 failed to function due to a bad ignition timer setting (the timer, which was supposed to start ignition 1.5 hours after orbit, was apparently set for 1.5 years). The orbit decayed much sooner than expected (only 2 days) and the spacecraft re-entered the Earth's atmosphere on 1971 May 12." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1971-045A">3:12</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1971-045A" class="mission">Mars 2</a><br />Kick off: <time datetime="1971-05-19T16:22:44">Wed May 19 1971 16:22</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 1</div></td>
+		<td class="report">"Beginning a short rally, Earth player Russia finally orbits Mars on 1971 Nov 27. The orbiter sent data back to Earth. The descent module, however, entered the Martian atmosphere at a steeper angle than planned. The descent system malfunctioned and the lander crashed at 45 deg S, 302 deg W, delivering the Soviet Union coat of arms to the surface. If you can recognize it." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1971-049A">4:12</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1971-049A" class="mission">Mars 3</a><br />Kick off: <time datetime="1971-05-28T15:26:30">Fri May 28 1971 15:26</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Following one good toss with another, Earth player Russia sends another orbiter/lander to Mars. Twenty seconds after landing, the lander stopped working... And did I mention that the orbiter had suffered from a partial loss of fuel and did not have enough to put itself into a planned 25 hour orbit? No matter. We got pictures!" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1971-051A">5:12</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1971-051A" class="mission">Mariner 9</a><br />Kick off: <time datetime="1971-05-30T22:23:00">Sun May 30 1971 22:23</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">Mariner 9 arrived at Mars and began orbiting on 1971 Nov 14 making it the first spacecraft to orbit another planet (even though fellow player Russia began a successful attempt to do so 11 days earlier). We expect it to decay and plunge into the Martian atmosphere in late 2022. Where will <i>you</i> be? On Mars? (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1973-047A">6:12</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1973-047A" class="mission">Mars 4</a><br />Kick off: <time datetime="1973-07-21T19:30:59">Sat Jul 21 1973 19:30</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"A very close play. The hardware reached Mars on 1974 February 10. Due to a flaw in the computer chip, the retro-rockets never fired to slow the craft into Mars orbit. Mars 4 flew by the planet at a range of 2200 km. It returned one swath of pictures and some radio occultation data which constituted the first detection of the nightside ionosphere on Mars." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1973-049A">7:12</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1973-049A" class="mission">Mars 5</a><br />Kick off: <time datetime="1973-07-25T18:55:48">Wed Jul 25 1973 18:55</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">Another successful orbiter reaching mars on 1974 Feb 12. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1973-052A">7:13</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1973-052A" class="mission">Mars 6</a><br />Kick off: <time datetime="1973-08-05T17:45:48">Sun Aug 05 1973 17:45</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"An overzealous attempt to land on the planet. Contact with the descent module was lost at 09:11:05 UT in ""direct proximity to the surface"", probably either when the retrorockets fired or when it hit the surface at an estimated 61 m/s. The descent module transmitted 224 seconds of data before transmissions ceased. Unfortunately, much of the data were unreadable due to a flaw in a computer chip which led to degradation of the system during its journey to Mars." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1973-053A">7:14</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1973-053A" class="mission">Mars 7</a><br />Kick off: <time datetime="1973-08-09T17:00:17">Thu Aug 09 1973 17:00</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"INCOMPLETE! And so close, too. Due to a problem in the operation of one of the onboard systems (attitude control or retro-rockets) the landing probe separated prematurely (4 hours before encounter) and missed the planet by 1300 km." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1975-075A">8:14</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1975-075A" class="mission">Viking 1</a><br />Kick off: <time datetime="1975-08-20T21:22:00">Wed Aug 20 1975 21:22</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"One of the better remembered plays in the game. 1976 June 19 the orbiter began to orbit and the lander landed on July 20. Shortly after landing, the probe sent back <a href=""http://nssdc.gsfc.nasa.gov/imgcat/html/object_page/vl1_p17045.html""> the first picture from the surface of Mars</a>." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1975-083A">9:14</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1975-083A" class="mission">Viking 2</a><br />Kick off: <time datetime="1975-09-09T18:39:00">Tue Sep 09 1975 18:39</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Again, a very famous play. Orbit on 1976 Aug 07 and a soft landing on September 03." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1988-058A">9:15</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1988-058A" class="mission">Phobos 1</a><br />Kick off: <time datetime="1988-07-07T17:38:04">Thu Jul 07 1988 17:38</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Phobos 1 operated nominally until an expected communications session on September 02 failed to occur. The failure of controllers to regain contact with the spacecraft was traced to an error in the software uploaded on August 29/30 which had deactivated the attitude thrusters. This resulted in a loss of lock on the Sun, causing the spacecraft to orient the solar arrays away from the Sun and deplete the batteries." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1988-059A">9:15</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1988-059A" class="mission">Phobos 2</a><br />Kick off: <time datetime="1988-07-12T17:01:43">Tue Jul 12 1988 17:01</time></td>
+		<td class="agency"><img src="media/logo_soviet.png" class="player" alt="soviet" title="SOVIET" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 1</div></td>
+		<td class="report">"In this oh-so-close play, Phobos 2 collected some useful data upon approach to one of the red planet's moons. Shortly before the final phase of the mission, during which the spacecraft was to approach within 50 m of Phobos' surface and release two landers, one a mobile `hopper', the other a stationary platform, contact with Phobos 2 was lost. Were it not for the earlier data collection, this play would have been lost." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1992-063A">9:16</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1992-063A" class="mission">Mars Observer</a><br />Kick off: <time datetime="1992-09-25T17:05:01">Fri Sep 25 1992 17:05</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"After all we have come to expect from this player, Mars Observer makes it all the way to Mars orbit insertion. After it was asked to pressurize a fuel tank...<br /><br />""In space, noone can hear you go <B>BOOM</B>""" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1996-062A">10:16</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1996-062A" class="mission">Mars Global Surveyor</a><br />Kick off: <time datetime="1996-11-07T17:00:50">Thu Nov 07 1996 17:00</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"A fine recovery after the last ""oops."" Began orbiting Mars on 1997 Sep 12.<br /><br />2005-05-10: Over eight years after launch, it is possible that Global Surveyor has <a href=""http://skyandtelescope.com/news/article_1509_1.asp""> found the wreckage of Mars Polar Orbiter on Mars</a>.<br /><br /> 2006-11-02: MGS notified Earth that it had trouble adjusting the position of one of its two solar panels. It has not been heard from since, except for a very weak signal on 2006-11-05. The failure to position the solar panel properly may have left the spacecraft with too little power to transmit a signal to Earth.<br /><br />Even if MGS is dead, it will continue orbiting Mars for decades to come. But its orbit will decay, causing it to plunge into Mars' atmosphere sometime around 2046. (from <a href=""http://space.newscientist.com/article/dn10638-mars-probe-probably-lost-forever.html"">NewScientist</a>)." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1996-064A">10:17</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1996-064A" class="mission">Mars 96</a><br />Kick off: <time datetime="1996-11-16T20:48:53">Sat Nov 16 1996 20:48</time></td>
+		<td class="agency"><img src="media/logo_roscosmos.png" class="player" alt="roscosmos" title="ROSCOSMOS" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"A swing and a miss. The spacecraft was launched into Earth orbit, but failed to achieve insertion into Mars cruise trajectory and re-entered the Earth's atmosphere at about 00:45 to 01:30 UT on November 17 and crashed within a presumed 320 km by 80 km area which includes parts of the Pacific Ocean, Chile, and Bolivia. The cause of the crash is not known." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1996-068A">11:17</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1996-068A" class="mission">Mars Pathfinder</a><br />Kick off: <time datetime="1996-12-04T06:58:00">Wed Dec 04 1996 06:58</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report"></td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1998-041A">11:18</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1998-041A" class="mission">Nozomi (Planet-B)</a><br />Kick off: <time datetime="1998-07-03T18:12:00">Fri Jul 03 1998 18:12</time></td>
+		<td class="agency"><img src="media/logo_jaxa.png" class="player" alt="jaxa" title="JAXA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"In what can only be called the wildest interplanetary fumble in the known universe, the Earth takes yet another swipe across the nose. On December 20, the spacecraft attempted to use gravitational assist from an Earth flyby to put it on a course for Mars. Unfortunately, a malfunctioning valve wasted fuel and caused the spacecraft to miss its trajectory. The two necessary course corrections expended further fuel. In an attempt to save the play, it was decided to allow the spacecraft to remain in orbit around the sun for four years when a lower velocity trajectory would be avaliable. However, on 2002 April 21, powerful solar flares damaged the spacecraft's onboard communications and power systems. An electrical short then shut down the heaters causing the hydrazine fuel to freeze. When the spacecraft returned for another Earth swing-by on 2003 June 19, the fuel was thawed out. Another attempt was made to put it back on course for Mars, but the main thruster orbital insertion burn failed on December 9.<br /><br />And Mars replied: ""All your base are belong to us.""" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1998-073A">11:19</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1998-073A" class="mission">Mars Climate Orbiter</a><br />Kick off: <time datetime="1998-12-10T18:45:51">Thu Dec 10 1998 18:45</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">"Yes folks, it's true. Not all of Earth's players use the same units for measurement. Engineers in the USA calculated trajectory-correction burns in pounds/second and the spacecraft was programmed to accept the numbers as newtons/second. These burns were occuring 12-14 times per week.<br /><br />I think it's time for a certain country to get with the program, don't you?" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1999-001A">11:20</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1999-001A" class="mission">Mars Polar Lander</a><br />Kick off: <time datetime="1999-01-03T20:21:10">Sun Jan 03 1999 20:21</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">Marty took a very good pot-shot at this lander. The last telemetry from Mars Polar Lander was sent just prior to atmospheric entry on 3 December. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2001-014A">12:20</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2001-014A" class="mission">Mars Odyssey</a><br />Kick off: <time datetime="2001-04-07T15:02:22">Sat Apr 07 2001 15:02</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">The Odyssey orbiter made it to orbit on 2001 October 24.</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2003-022A">12:20</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2003-022A" class="mission">Mars Express</a><br />Kick off: <time datetime="2003-06-02T17:45:00">Mon Jun 02 2003 17:45</time></td>
+		<td class="agency"><img src="media/logo_esa.png" class="player" alt="esa" title="ESA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 1</div></td>
+		<td class="report">"Mars Express fired its main thrusters on December 25 and successfully entered Mars orbit. The Beagle 2 lander, however, has not been heard from. This was a two-pronged mission which <i>did</i> successfully arrive and orbit Mars with the added bonus of dropping some luggage on the planet for later collection.<br /><br />In January 2015, observations from Mars Reconnaissance Orbiter showed Beagle 2 had landed on the surface but hadn't fully deployed. Still a score draw." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a> with post-match reporting by Stuart Lowe")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2003-027A">13:20</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2003-027A" class="mission">Spirit (MER-A)</a><br />Kick off: <time datetime="2003-06-10T17:58:47">Tue Jun 10 2003 17:58</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Showing team spirit, this rover landed on Mars on 2004 Jan 04. Eighteen days into the mission, Spirit had major trouble involving its flash memory and the software used to communicate with that memory. The problem was solved and Spirit continues to wander over the Martian surface.<br /><br />The rover became stuck in 2009 and final communication was on 22 March 2010." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a> with additional reporting by Stuart Lowe")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2003-032A">14:20</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2003-032A" class="mission">Opportunity (MER-B)</a><br />Kick off: <time datetime="2003-07-08T03:18:15">Tue Jul 08 2003 03:18</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">The lander arrived at the Meridiani Planum on Mars on Jan 25 05:05 UTC and... ITS A SCORE! We got pictures on Jan 25 09:12 UTC. By 28 July 2014 the rover had surpassed Lunokhod 2 as the rover that had travelled the furthest distance. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a> with additional reporting by Stuart Lowe")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2004-006A">15:20</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2004-006A" class="mission">Rosetta</a><br />Kick off: <time datetime="2004-03-02T07:17:00">Tue Mar 02 2004 07:17</time></td>
+		<td class="agency"><img src="media/logo_esa.png" class="player" alt="esa" title="ESA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"On its way to rendezvous and land on Comet 67 P/Churyumov-Gerasimenko, Rosetta <a href=""http://www.esa.int/SPECIALS/Rosetta/SEMUDT70LYE_0.html"">took some pretty amazing images of Mars</a> on 2007 Feb 25.<br /><br />Earth closes the gap yet another notch." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a> with additional reporting by Stuart Lowe")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2005-029A">16:20</span></td>
+		<td class="mission"><a href="http://marsprogram.jpl.nasa.gov/mro/" class="mission">Mars Reconnaissance Orbiter</a><br />Kick off: <time datetime="2005-08-12T11:43:00">Fri Aug 12 2005 11:43</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Here's our next chance to close the gap... A successful launch from Complex 41 at Cape Canaveral was a good way to start. Earth is heading for a winning streak we haven't seen since the 1970s. 2006 March 10 20:16 Earth re-estabilished communications with the orbiter once it entered Mars orbit. While I have no doubts that this will be another score for Earth.... why no snap-shots yet? 2006 March 24 <B>WE GOT IMAGES!</B> A fine showing for this decade. Will we keep up the winning streak? The factsheet states that the next six months will be used to modify the polar orbit into a near-circle (255 km periapsis over the south pole and 320 km apoapsis over the north pole) with a period of 112 minutes. ``There will be twelve sun-synchronous orbits per day so that the orbiter will always see the ground at 3:00 p.m. local time at the equator. Science operations will take place nominally from the end of solar conjunction in November 2006 to the start of the next solar conjunction in November 2008, roughly one martian year. Total cost of the mission is estimated at about $720 million.""" (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2007-034A">17:20</span></td>
+		<td class="mission"><a href="http://phoenix.lpl.arizona.edu/" class="mission">Phoenix</a><br />Kick off: <time datetime="2007-08-04T10:00:00">Sat Aug 04 2007 10:00</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"The Phoenix Mars Mission is the first in NASA's Scout Program. Phoenix is designed to study the history of water and habitability potential in the Martian arctic's ice-rich soil. Phoenix proved to be immensly popular off the pitch too becoming one of the <a href=""https://twitter.com/marsphoenix"">first spacecraft on Twitter</a>." (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a> with additional reporting by Stuart Lowe")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2007-043A">18:20</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2007-043A" class="mission">Dawn</a><br />Kick off: <time datetime="2007-09-27T11:34:00">Thu Sep 27 2007 11:34</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">Actually designed to rendezvous and orbit the asteroids 4 Vesta and 1 Ceres. After initially being cancelled it was rescheduled for launch in 2007. During the crucial Mars gravity assist in February 2009 the spacecraft placed itself in safe mode due to a software programming error. Despite the setback the mission did get images of Mars during the flyby. (<strong>Reporter:</strong> "<a href=""http://www.bio.aps.anl.gov/~dgore/fun/PSL/index.html"">David Gore</a>")</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2011-065A">18:21</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2011-065A" class="mission">Phobos-Grunt</a><br />Kick off: <time datetime="2011-11-08T20:16:00">Tue Nov 08 2011 20:16</time></td>
+		<td class="agency"><img src="media/logo_roscosmos.png" class="player" alt="roscosmos" title="ROSCOSMOS" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">The Phobos-Grunt spacecraft did not perform its scheduled burn to begin its trajectory to Mars and could not leave Earth orbit. It re-entered Earth's atmosphere on 15 January 2012. (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2011-065A">18:22</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2011-065A" class="mission">Yinghuo-1</a><br />Kick off: <time datetime="2011-11-08T20:16:00">Tue Nov 08 2011 20:16</time></td>
+		<td class="agency"><img src="media/logo_cnsa.png" class="player" alt="cnsa" title="CNSA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">0 - 1</div></td>
+		<td class="report">Launched with the Phobos-Grunt spacecraft this was China's debut match. Unfortunately Phobos-Grunt did not perform its scheduled burn to begin its trajectory to Mars and could not leave Earth orbit. It re-entered Earth's atmosphere on 15 January 2012. (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2011-070A">19:22</span></td>
+		<td class="mission"><a href=" http://www.nasa.gov/mission_pages/msl/index.html" class="mission">Curiosity (Mars Science Laboratory)</a><br />Kick off: <time datetime="2011-11-26T15:02:00">Sat Nov 26 2011 15:02</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Using Earth's most elaborate landing system yet, Curiosity went through ""7 minutes of terror"" involving a parachute, retrorockets and finally was lowered onto the surface by a skycrane. Following a successful score, the rover even gained <a href=""https://twitter.com/SarcasticRover"">a parody Twitter account</a>." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2013-060A">20:22</span></td>
+		<td class="mission"><a href="http://www.isro.org/pslv-c25/mission.aspx" class="mission">Mars Orbiter Mission</a><br />Kick off: <time datetime="2013-11-05T09:08:00">Tue Nov 05 2013 09:08</time></td>
+		<td class="agency"><img src="media/logo_isro.png" class="player" alt="isro" title="ISRO" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"The Mars Orbiter Mission (MOM) is India's debut in the interplanetary division after moving up from the Earth-Moon league. It is a ""technology demonstrator"" project and development was completed in a record 15 months. It lifted-off from First Launch Pad at Sriharikota, Andhra Pradesh. It had 6 scheduled Earth-orbit raising burns. The first 3 went to plan. The 4th (11 November 2013) only increased the velocity by 35 m/s rather than 130 m/s planned. This was <a href=""http://www.isro.gov.in/pressrelease/scripts/pressreleasein.aspx?Nov11_2013"">due to an error when turning on both the primary and redundant coils</a> of the solenoid flow control valve in the Newton Liquid Engine together. A supplementary burn occurred at 23:30 UTC 11 November 2013. It left Earth orbit on 30 Nov 2013 and successfully inserted into orbit of Mars on 24 September 2014. Just twelve hours into the orbit, there are <a href=""http://ibnlive.in.com/news/just-12-hours-into-the-orbit-indias-successful-mars-mission-mangalyaan-sends-first-set-of-data/501597-3.html"">claims that five images have been received on Earth</a>. Here is <a href=""https://twitter.com/MarsOrbiter/status/515008143361712129/photo/1"">one</a> that was released on Twitter.. " (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2013-063A">21:22</span></td>
+		<td class="mission"><a href="http://www.nasa.gov/mission_pages/maven/main/index.html" class="mission">MAVEN</a><br />Kick off: <time datetime="2013-11-18T18:28:00">Mon Nov 18 2013 18:28</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"The Mars Atmosphere and Volatile EvolutioN (MAVEN) mission is designed to explore Mars' upper atmosphere and ionosphere, and interactions with the solar wind, specifically to determine the loss of volatile compounds to space through time and how it has affected the history of Mars' atmosphere and climate. It launched aboard a United Launch Alliance Atlas V rocket from Cape Canaveral Air Force Station in Florida at 18:28 UTC 18 Nov 2013, beginning a 10-month journey to Mars orbit. It successfully entered Mars' orbit at 03:24 UTC 22 September 2014. On 25 September 2014 MAVEN released its <a href=""http://www.nasa.gov/content/goddard/maven-spacecraft-returns-first-mars-observations/"">first observations of the extended upper atmosphere</a>." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2016-017A">21:22</span></td>
+		<td class="mission"><a href="http://exploration.esa.int/mars/46048-programme-overview/" class="mission">ExoMars</a><br />Kick off: <time datetime="2016-03-14T09:31:00">Mon Mar 14 2016 09:31</time></td>
+		<td class="agency"><img src="media/logo_esa.png" class="player" alt="esa" title="ESA" /><br /><img src="media/logo_roscosmos.png" class="player" alt="roscosmos" title="ROSCOSMOS" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">1 - 1</div></td>
+		<td class="report">"This is match one of a two match series. The Trace Gas Orbiter and an Entry, Descent and landing demonstrator Module (EDM) known as Schiaparelli, launched on 14 March 2016. On 19 October 2016 the orbiter successfully achieved orbit. The lander deployed and attempted a score but lost signal 50 seconds before touchdown. ESA are yet to score a successful touchdown against the red planet's defence. The second match in the series (consisting of a rover) is due to launch in July 2020." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2018-042A">22:22</span></td>
+		<td class="mission"><a href="https://mars.nasa.gov/insight/" class="mission">InSight</a><br />Kick off: <time datetime="2018-05-05T11:05:00">Sat May 05 2018 11:05</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Mars</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"This was a multi-player game from Earth whose team consisted of a lander (the Interior Exploration using Seismic Investigations, Geodesy and Heat Transport - InSight) and two cubesat assistants (Mars Cube One A & B) that were the first cubesats Earth had launched beyond their own orbit and provided communications back to Earth. They were all launched successfully in May 2018 and took six months to reach their destination. InSight made a successful touchdown at Elysium Planitia and successfully deployed its instruments. On December 8th InSight recorded the sounds of Martian winds within the human hearing range and successfully sent these back to Earth. The win for Earth increased their lead at the top of the table and sent Mars down into 7th place." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">1 - 0</span><span class="result ceres" title="ceres">CER</span></div></div><h2 id="ceres">Earth v Ceres Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="2007-043A">1:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=2007-043A" class="mission">Dawn</a><br />Kick off: <time datetime="2007-09-27T11:34:00">Thu Sep 27 2007 11:34</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Ceres</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Designed to rendezvous and orbit the asteroids 4 Vesta and 1 Ceres. After initially being cancelled it was rescheduled for launch in 2007. Scheduled to reach Ceres in 2015. On 2014 September 11 <a href=""http://phenomena.nationalgeographic.com/2014/09/17/cosmic-ray-delays-spacecraft-headed-for-dwarf-planet/"">a high-energy particle struck the spacecraft's electrical systems</a> putting it in safe mode. The spacecraft was restarted after 4 days. On 6 March 2015 at 12:39 GMT, Dawn was captured by the gravity of Ceres making it the first mission to achieve orbit of a dwarf planet. Dawn has provided <a href=""http://www.nasa.gov/press/2015/march/nasa-media-teleconference-today-on-first-spacecraft-to-successfully-enter-orbit/"">the most detailed images of Ceres</a> ever. Earth scores!" (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">9 - 0</span><span class="result jupiter" title="jupiter">JUP</span></div></div><h2 id="jupiter">Earth v Jupiter Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="1972-012A">1:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1972-012A" class="mission">Pioneer 10</a><br />Kick off: <time datetime="1972-03-03T00:00:00">Fri Mar 03 1972 00:00</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"The spacecraft achieved its closest approach to Jupiter on 04 December 1973, when it reached approximately 2.8 Jovian radii (about 200,000 km). After the fly-by it continued out of the solar system heading generally towards the red star Aldebaran. The journey over a distance of 68 light years to Aldebaran will require about two million years to complete. This match will be covered by the Interstellar Lobbing League." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1973-019A">2:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1973-019A" class="mission">Pioneer 11</a><br />Kick off: <time datetime="1973-04-06T02:11:00">Fri Apr 06 1973 02:11</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report"></td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1977-076A">3:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1977-076A" class="mission">Voyager 2</a><br />Kick off: <time datetime="1977-08-20T14:29:00">Sat Aug 20 1977 14:29</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Several months after launch, in April 1978, Voyager 2's primary radio receiver failed, automatically kicking in the backup receiver which proved to be faulty. Attempts to recover the use of the primary receiver failed and the backup receiver was used for the remainder of the mission. Although use of the backup receiver made communication with the spacecraft more difficult, engineers were able to find workarounds. During the Jupiter fly-by Voyager 2 acquired around 18000 images." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1977-084A">4:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1977-084A" class="mission">Voyager 1</a><br />Kick off: <time datetime="1977-09-05T12:56:00">Mon Sep 05 1977 12:56</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Some 18,000 images of Jupiter and its satellites were taken by Voyager 1." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1989-084B">5:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1989-084B" class="mission">Galileo</a><br />Kick off: <time datetime="1989-10-18T22:23:00">Wed Oct 18 1989 22:23</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">2 - 0</div></td>
+		<td class="report">"The Galileo Probe was an atmospheric entry probe carried by the main spacecraft to Jupiter, where it directly entered and returned data from the planet." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1990-090B">6:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1990-090B" class="mission">Ulysses</a><br />Kick off: <time datetime="1990-10-06T11:47:16">Sat Oct 06 1990 11:47</time></td>
+		<td class="agency"><img src="media/logo_esa.png" class="player" alt="esa" title="ESA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Due to the loss of Challenger, the launch of Ulysses was delayed until October 6, 1990 aboard Discovery (mission STS-41). The mission was to study the Sun but included a Jupiter fly-by. During the fly-by the spacecraft studied Jupiter's magnetosphere." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1997-061A">7:0</span></td>
+		<td class="mission"><a href="http://saturn.jpl.nasa.gov/" class="mission">Cassini</a><br />Kick off: <time datetime="1997-10-15T08:43:00">Wed Oct 15 1997 08:43</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report">Cassini was the largest interplanetary spacecraft ever constructed by NASA. (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2006-001A">8:0</span></td>
+		<td class="mission"><a href="http://pluto.jhuapl.edu/" class="mission">New Horizons</a><br />Kick off: <time datetime="2006-01-17T19:00:00">Tue Jan 17 2006 19:00</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"On the way to play against Pluto, New Horizons took observations of Jupiter between September 2006 and March 2007. While at Jupiter, New Horizons' instruments made refined measurements of the orbits of Jupiter's inner moons, particularly Amalthea. The probe's cameras measured volcanoes on Io, studied all four Galilean moons as well as the outer moons Himalia and Elara. It also studied Jupiter's Little Red Spot. Not bad for a speedy fly-by." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="2011-040A">9:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/spacecraftDisplay.do?id=2011-040A" class="mission">Juno</a><br />Kick off: <time datetime="2011-08-05T16:25:00">Fri Aug 05 2011 16:25</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Jupiter</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Following almost five years of travel, Juno successfully achieved orbit in the early hours of 05 July 2016. After surviving its first pass through Jupiter's extreme radiation environment, Juno scored <a href=""http://www.jpl.nasa.gov/news/news.php?release=2016-185"">its first in-orbit view</a> on July 12th. The moon in the NASA camp is confident of more results over the next 37 orbits." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">4 - 0</span><span class="result saturn" title="saturn">SAT</span></div></div><h2 id="saturn">Earth v Saturn Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="1973-019A">1:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1973-019A" class="mission">Pioneer 11</a><br />Kick off: <time datetime="1973-04-06T02:11:00">Fri Apr 06 1973 02:11</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Saturn</div></div><div class="score">1 - 0</div></td>
+		<td class="report"></td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1977-076A">2:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1977-076A" class="mission">Voyager 2</a><br />Kick off: <time datetime="1977-08-20T14:29:00">Sat Aug 20 1977 14:29</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Saturn</div></div><div class="score">1 - 0</div></td>
+		<td class="report">During the fly-by Voyager 2 acquired roughly 16000 images. (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1977-084A">3:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1977-084A" class="mission">Voyager 1</a><br />Kick off: <time datetime="1977-09-05T12:56:00">Mon Sep 05 1977 12:56</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Saturn</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Roughly 16,000 images of Saturn, its rings and satellites were obtained." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	<tr>
+		<td class="total"><span id="1997-061A">4:0</span></td>
+		<td class="mission"><a href="http://saturn.jpl.nasa.gov/" class="mission">Cassini</a><br />Kick off: <time datetime="1997-10-15T08:43:00">Wed Oct 15 1997 08:43</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Saturn</div></div><div class="score">1 - 0</div></td>
+		<td class="report">Cassini was the largest interplanetary spacecraft ever constructed by NASA. Cassini successfully entered Saturn orbit in 2004 returning many thousands of images. (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">1 - 0</span><span class="result uranus" title="uranus">URA</span></div></div><h2 id="uranus">Earth v Uranus Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="1977-076A">1:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1977-076A" class="mission">Voyager 2</a><br />Kick off: <time datetime="1977-08-20T14:29:00">Sat Aug 20 1977 14:29</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Uranus</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Voyager 2 was successfully able to obtain about 8,000 images of Uranus and its satellites." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">1 - 0</span><span class="result neptune" title="neptune">NEP</span></div></div><h2 id="neptune">Earth v Neptune Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="1977-076A">1:0</span></td>
+		<td class="mission"><a href="http://nssdc.gsfc.nasa.gov/nmc/masterCatalog.do?sc=1977-076A" class="mission">Voyager 2</a><br />Kick off: <time datetime="1977-08-20T14:29:00">Sat Aug 20 1977 14:29</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Neptune</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"Following on from the success of the previous matches on its tour, Voyager 2 secures another win. Improvements in the on-board software and use of image compression techniques allowed about 10,000 images of Neptune and its satellites to be taken." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	</tbody></table>
+<div class="right"><div class="result"><span class="result earth" title="earth">EAR</span><span class="vs">1 - 0</span><span class="result pluto" title="pluto">PLU</span></div></div><h2 id="pluto">Earth v Pluto Match History</h2>
+	<table class="versus">
+	<thead><tr><th>Wins</th><th class="mission">Mission</th><th class="agency">Lobber</th><th>Score</th><th class="report">Match Report</th></tr></thead>
+	<tbody>
+	<tr>
+		<td class="total"><span id="2006-001A">1:0</span></td>
+		<td class="mission"><a href="http://pluto.jhuapl.edu/" class="mission">New Horizons</a><br />Kick off: <time datetime="2006-01-17T19:00:00">Tue Jan 17 2006 19:00</time></td>
+		<td class="agency"><img src="media/logo_nasa.png" class="player" alt="nasa" title="NASA" /></td>
+		<td class="between"><div class="players"><div class="player player1">Earth</div><div class="v">v</div><div class="player player2">Pluto</div></div><div class="score">1 - 0</div></td>
+		<td class="report">"The first match between Pluto and Earth began in 2006 Jan and ran until Pluto flyby on 2015 July 14. During the flyby large numbers of images and measurements were successfully taken of Pluto and its moons and returned to Earth with the <a href=""https://instagram.com/p/5HTXKMoaFL/?taken-by=nasa"">last pre-flyby image appearing on Instagram</a>. Following the flyby, New Horizons heads deeper into the Kuiper Belt to investigate other objects." (<strong>Reporter:</strong> Stuart Lowe)</td>
+	</tr>
+	</tbody></table>
+</div>
+</body>
+</html>
