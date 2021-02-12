@@ -1,0 +1,229 @@
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #404040;
+	padding: 64px;
+	margin: 0px;
+	line-height: 1.5em;
+	/*background: #000000;*/
+}
+/*
+.content {
+	z-index: 1;
+	position: relative;
+	background-color: #ffffff;
+	padding-top: 4px;
+}
+
+div.breaking { margin-left: 16px; margin-top: 16px; }
+#player1, #player2 {
+	height: 600px;
+	width: 600px;
+	background-repeat: no-repeat;
+	position: fixed;
+	right: -400px;
+	height: 100%;
+	top:0px;
+	z-index: 0;
+
+}
+#player2 {
+	background-image: url('mars.jpg');
+	background-position: right center;
+}
+h1, h2, h3, p {
+	padding-left: 16px;
+}
+*/
+h1, h2 { font-family: Century Gothic, Helvetica, sans-serif; }
+table {
+	border-collapse: collapse;
+	font-size: 1em;
+}
+td, th {
+	padding: 8px;
+	vertical-align: top;
+	border: 1px solid #202020;
+	font-weight: normal;
+}
+
+table.leaderboard {
+	float: right;
+	margin-left: 16px;
+	border-bottom: 8px solid #202020;
+	line-height: 1em;
+}
+table.leaderboard td { border: 0px; border-bottom: 1px solid white; }
+table.leaderboard th {
+	background-color: #202020;
+	border-left: 0px;
+	border-right: 0px;
+	color: white;
+	border-right: 1px solid #4f4d4b;
+}
+table.leaderboard th:last-child,table.leaderboard td:last-child { border-right: 0px; }
+table.leaderboard tr { background-color: #e6e6e6; }
+table.leaderboard tr:hover { background-color: #d6d6d6; }
+table.leaderboard .team { text-align: left; }
+table.leaderboard a { color: inherit; display: block; }
+
+td.total, td.between, td.played, td.win, td.draw, td.loss, td.score, td.position, td.goalfor, td.goalagainst, td.goaldiff {
+	text-align: center;
+}
+table.versus { min-width: 100%; }
+table.versus tr{
+	background-color: #e6e6e6;
+}
+table.versus tr:hover {
+	background-color: #d6d6d6;
+}
+table.versus th {
+	background-color: #202020;
+	color: white;
+}
+table.versus th {
+	border: 0px;
+	border-right: 1px solid #4f4d4b;
+}
+table.versus td {
+	border: 0px;
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+}
+table.versus td.mission, table.versus th.mission {
+	width: 240px;
+	text-align: left;
+}
+table.versus td.between {
+	width: 10em;
+}
+table.versus td.report {
+	border-right: 0px;
+}
+table.versus td.team2 {
+	border-left: 0px;
+}
+table.versus tr.inplay td.total { background-color: #009d00; color: white; }
+table.versus tr.upcoming td.total { background-color: #fac900; }
+table.versus .total { width: 3em; }
+table.versus .name { min-width: 5em; }
+table.versus .report { text-align: left; }
+table.versus { margin-bottom: 2em; }
+a.mission { font-weight: bold; }
+div.player, div.v { display: inline-block; }
+div.player { width: 4em; }
+tr.inplay div.player,tr.upcoming div.player { width: auto; }
+div.player1 { text-align: right; }
+div.player2 { text-align: left; }
+div.v { margin: 0px 0.3em; color: black; }
+div.score { font-size: 1.8em; font-weight: bold; }
+
+div.players, div.result { font-weight: bold; }
+div.breaking, div.result { line-height: 1.5em; display: block; margin-bottom: 0.5em; background-color: #e6e6e6; }
+div.breaking span,div.result span { line-height: 1.5em; display: inline-block; padding: 0 0.25em; }
+div.breaking span.breaking { background-color: #df0000; color: white; }
+div.result { display: inline-block; margin-top: 0.25em; }
+div.right { float: right; }
+h2,div.right { margin-top: 0em; }
+.vs { background-color: #d6d6d6; } 
+.mercury { background-color: rgb(170,150,170); color: white; }
+.venus { background-color: rgb(245,222,179); color: black; }
+.earth { background-color: #009d00; color: white; }
+.mars { background-color: #df0000; color: white; }
+.jupiter { background-color: rgb(255,150,150); color: black; }
+.saturn { background-color: rgb(200,150,150); color: black; }
+.uranus { background-color: rgb(130,150,255); color: white; }
+.neptune { background-color: rgb(100,100,255); color: white; }
+.pluto { background-color: #1e77b4; color: white; }
+.ceres { background-color: #700000; color: white; }
+.eris { background-color: #040404; color: white; }
+.haumea { background-color: #4b3c00; color: white; }
+.makemake { background-color: #430000; color: white; }
+
+@media only screen and (max-width: 900px){
+
+	body {
+		padding: 32px;
+	}
+	table.versus td.between { width: auto; }
+	div.player { width: 100%; display: block; text-align: center; }
+	.upcoming .score { display: none; }
+	table.versus td.mission, table.versus th.mission { width: auto; max-width: 25%; }
+	table.versus td.total { width: auto; }
+}
+
+@media only screen and (max-width: 640px){
+
+	body { padding: 16px; }
+	table { width: 100%; }
+	table.leaderboard { margin-left: 0px; float: none; }
+	.agency { display: none; }
+
+}
+
+@media only screen and (max-width: 480px){
+	body { padding: 0px; }
+
+	h1, h2, h3, p, div.breaking { margin: 16px; }
+	div.right { float: none; text-align: center; }
+	div.result { margin: auto; }
+
+
+	/* Force table to not be like tables anymore */
+	table.versus, table.versus thead, table.versus tbody, table.versus th, table.versus td, table.versus tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	table.versus thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	
+	table.versus td { 
+		/* Behave  like a "row" */
+		border-right: 0px;
+		position: relative;
+		padding-left: 30%;
+		text-align: left;
+		min-height: 1.4em;
+	}
+		
+	table.versus td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 8px;
+		left: 8px;
+		width: 25%; 
+		padding-right: 1em; 
+		white-space: nowrap;
+	}
+
+	table.versus tr td.total { background-color: #202020; color: white; }
+	table.versus tr.inplay td.total { background-color: #009d00; color: white; }
+	table.versus tr.upcoming td.total { background-color: #fac900; }
+
+	table.versus td.total:before { content: "Wins: "; }
+	table.versus td.mission:before { content: "Mission: "; }
+	table.versus td.agency:before { content: "Lobber: "; }
+	table.versus td.between:before { content: "Score: "; }
+	table.versus td.report:before { content: "Report: "; }
+
+	table.versus td.agency img { display: block; width: 2.8em; }
+	table.versus td.mission { max-width: 100%; }
+	div.players, div.score { display: inline; font-size: 1em; }
+	div.score { margin-left: 1em; font-weight: normal; }
+	div.player, div.v { display: inline; font-weight: normal; color: inherit; }
+
+	td.position, th.position { display: none; }
+
+}
+@media only screen and (max-width: 400px){
+	td.goalfor,th.goalfor,td.goalagainst,th.goalagainst { display: none; }
+}
+@media only screen and (max-width: 310px){
+	td.goaldiff,th.goaldiff { display: none; }
+}
