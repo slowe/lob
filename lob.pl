@@ -121,7 +121,10 @@ sub numberInPlay(){
 				($ymd,$t) = split(/T/,$launch);
 				($y,$m,$d) = split(/-/,$ymd);
 				($hh,$mm,$ss) = split(/:/,$t);
-				if(!$score && getDate($y,$m,$d,$hh,$mm,$ss) < time){ $playing++; }
+				if(!$score && getDate($y,$m,$d,$hh,$mm,$ss) < time){
+					print "In play $name\n";
+					$playing++;
+				}
 			}
 		}
 	}
