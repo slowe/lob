@@ -37,8 +37,8 @@ for($i = 1; $i < @planets; $i++){
 
 $html = "<!DOCTYPE html>\n<html>\n";
 $html .= "<head>\n";
-$html .= "\t<!-- Please don't edit this page by hand as it will be over-written by code. --> ";
-$html .= "\t<!-- Instead, please edit the matches.csv file --> ";
+$html .= "\t<!-- Please don't edit this page by hand as it will be over-written by code. -->\n";
+$html .= "\t<!-- Instead, please edit the matches.csv file -->\n";
 $html .= "\t<title>Interplanetary Lobbing</title>\n";
 $html .= "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n";
 $html .= "\t<meta name=\"twitter:card\" content=\"summary\">\n";
