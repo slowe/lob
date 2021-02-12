@@ -153,6 +153,8 @@ sub buildTable(){
 	foreach $o (@output){
 		$o =~ s/[\n\r]//g;
 		($launch,$name,$id,$endmission,$flybydate,$insertiondate,$atmosdate,$landdate,$player1,$player2,$inplayscore,$score,$launched,$leftorbit,$flyby,$orbit,$atmos,$land,$rover,$link,$report,$reporter,$notes) = split(/\t/,$o);
+		if($report eq "\"\""){ $report = ""; }
+		if($reporter eq "\"\""){ $reporter = ""; }
 		($p1,$p2) = split(/-/,$score);
 		$scores{$planet1}{'goalf'} += $p1+0;
 		$scores{$planet2}{'goalf'} += $p2+0;
